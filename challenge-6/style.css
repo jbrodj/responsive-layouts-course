@@ -73,23 +73,44 @@ header {
     padding: 1em 0;
 }
 
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    flex-grow: 1;
+    /* The flex-grow of 1 takes the place of a width 100% here. This is just making that flex container take up as much space as it can. */
+}
+
 .nav__list {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
+    align-items: center;
+}
 
+.nav__list--primary {
+    margin: 0 auto;
 }
 
 .nav__link {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;;
-    margin-right: 1rem;
 }
+
+.nav__item + .nav__item {
+    margin-left: 1rem;
+}
+
+/* ======= This is a cool thing!!!  ======= */
+    /* We're splitting up the navs left and right by just making the left margin auto on the first element that gets pushed right! No need for a div. */
+    /* Though probably more common to just make a second UL inside the nav to hold the second list. */
+.nav__item--push-right {
+    margin-left: auto;
+}
+/* So wer're going to do that instead bc this can conflict with our other margins */
 
 .nav__link--button {
     background: #fff;
