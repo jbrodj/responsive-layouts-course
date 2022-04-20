@@ -159,9 +159,13 @@ header {
     background-color: #136c72;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+    .container {
+        width: 70%;
+    }
+
     .row {
-        display: block;
+        flex-direction: column;
     }
 
     .hero__text, .hero__img {
@@ -169,10 +173,25 @@ header {
     }
 
     .hero__img {
-        margin-top: 2em;
+        margin-bottom: 2em;
+        order: -1;
     }
 
     .primary-content, .sidebar {
         width: 100%;
+    }
+
+    .sidebar {
+        padding: 1.5em 3em;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+
+    .sidebar {
+        padding: 1.5em;
     }
 }
