@@ -146,4 +146,29 @@ header {
   h1 {
     font-size: 48px;
   }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .post:nth-of-type(2n) .row {
+    flex-direction: column;
+  }
+
+  .imgDiv, .postCopy, .qualitySection p {
+    width: 100%;
+  }
+
+  .postSection .imgDiv {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
 }
