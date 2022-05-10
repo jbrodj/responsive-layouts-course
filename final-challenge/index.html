@@ -14,7 +14,9 @@
     <header class="darkBg">
         <nav class="mainNav">
             <div class="container row">
-                <img src="./assets/logo.svg" alt="">
+                <a href="#">
+                    <img src="./assets/logo.svg" alt="CRL Logo">
+                </a>
                 <i class="hamburger"></i>
                 <ul class="navList row">
                     <li class="navLink">
@@ -29,18 +31,18 @@
                     <li class="navLink">
                         <a href="">Sign in</a>
                     </li>
-                    <li class="navLink buttonLink">
-                        <a href="">Sign up</a>
+                    <li class="navLink">
+                        <a class="buttonLink" href="">Sign up</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div class="container fwRow">
+        <div class="container fwRow headerContent">
             <h1>Responsive layouts <span>don't have to be a struggle</span></h1>
-            <div>
-                <p>Lorem ipsum dolor sit amet,
+            <div class="headerCopyContainer">
+                <p class="headerCopy">Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#" class="buttonLink">I want to learn</a>
+                <a href="#" class="learnButton buttonLink">I want to learn</a>
             </div>
         </div>
     </header>
@@ -96,15 +98,16 @@
 
     <footer class="darkBg">
         <div class="container">
-            <h2 class="darkBg--h2">Just scratching the surface</h2>
-            <div class="footerInfo fwRow">
-                <div class="about">
-                    <h3 class="footerNavHead">About our company</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam.</p>
-                </div>
-                <ul class="footerNavList">
+            <h2 class="darkBg--h2 footerHead">Just scratching the surface</h2>
+            <div class="footerInfo">
+                <ul class="footerNavList fwRow">
+                    <li class="footerListItem footerListItem--copy">
+                        <h3 class="footerNavHead">About our company
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </li>
                     <li class="footerListItem">
                         <nav class="siteNav">
                             <h3 class="footerNavHead">Getting around</h3>
