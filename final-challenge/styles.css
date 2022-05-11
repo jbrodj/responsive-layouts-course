@@ -153,10 +153,21 @@ h1 span {
   color: var(--tan);
 }
 
+.hamburger {
+  font-size: 1.25rem;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
 .mainNav {
   width: 100%;
   background-color: var(--nearBlack);
   padding: 1rem 0;
+}
+
+.mainNav .row {
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navList {
@@ -205,7 +216,7 @@ h1 span {
 
 
 
-/* First Section */
+/* Info Section */
 
 .infoSection {
   background-color: rgb(236, 236, 236);
@@ -218,7 +229,11 @@ h1 span {
 
 
 
-/* Second Section */
+/* Article / Aside Section */
+
+  .articleImg {
+    margin: 1.5rem 0;
+  }
 
 aside {
   margin-top: 2rem;
@@ -261,7 +276,7 @@ aside {
 
 /* Media Queries */
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
 
   /* General */
   .fwRow {
@@ -313,18 +328,18 @@ aside {
 
   .articleSection .fwRow {
     justify-content: space-between;
+    /* flex-wrap: wrap; */
   }
 
   .articleSection article {
     width: 57.5%;
+    flex-shrink: 20;
   }
 
   .articleSection aside {
-    width: 32.5%;
-  }
-
-  .articleSection img {
-    margin: 2rem 0;
+    width: 35%;
+    flex-shrink: 1;
+    min-width: 280px;
   }
 
   aside {
